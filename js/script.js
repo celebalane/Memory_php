@@ -62,14 +62,13 @@ function verif() { // Vérifie si une paire a été faite
 		return;
 	}
 	if (paires==7) {
-		clearInterval(timerID);//arette le chrono quand toutes les paires trouvées
+		 document.location.href="./index.php?nomJoueur="+ prompt("nomJoueur") + "&min=" + min + "&sec=" +sec; //Redirection au debut du jeu en recuperant le nom et le score
 	}
-}
+	}
 
-function RedirectionJavascript(){
-  document.location.href=""; 
-}
-
+	function relance () {
+	 document.location.href="./index.php";
+	}
    //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
   //                                                                         CHRONOMETRE                                                              //
  //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
